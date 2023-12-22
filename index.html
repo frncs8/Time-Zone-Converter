@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Zone Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/657de39a82.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+    <div class="container">
+        <div class="wrapper">
+          <h1>Time Zone Converter</h1>
+          <div class="chose-zone">
+            <div class="dropdown" >
+              <button class="dropbtn" id="dropdownMenuButton">Select Time Zone<i class="fa-solid fa-chevron-down"></i></button>
+              <ul id="timezone-list" class="dropdown-content">
+                <!-- Time zone list items will be populated here by JavaScript -->
+              </ul>
+            </div>
+            <button id="show-time-btn" class="btn">Apply</button>
+          </div>
+        </div>
+        
+        <div class="clock-container">
+          <div class="local-clock">
+            <h2>Local Time</h2>
+            <section class="clockanalog" >
+              <div class="clockdial">
+                <div class="show-min"></div>
+                <div class="show-min"></div>
+                <div class="show-min"></div>
+                <div class="show-min"></div>
+                <div class="show-min"></div>
+                <div class="show-min"></div>
+                <div class="show-min"></div>
+                <div class="show-min"></div>
+              </div>
+              <div class="clock-num">
+                <p class="show-num">12</p>
+                <p class="show-num">3</p>
+                <p class="show-num">6</p>
+                <p class="show-num">9</p>
+              </div>
+              <div class="clockhand"></div>
+              <div class="hour2"></div>
+              <div class="min2"></div>
+              <div class="sec2"></div>
+            </section>
+            
+          </div>
+          <div class="global-clock">
+            <h2>Global Time</h2>
+            <section class="clockanalog" >
+              <div class="clockdial">
+                <div class="show-min"></div>
+                <div class="show-min"></div>
+                <div class="show-min"></div>
+                <div class="show-min"></div>
+                <div class="show-min"></div>
+                <div class="show-min"></div>
+                <div class="show-min"></div>
+                <div class="show-min"></div>
+              </div>
+              <div class="clock-num">
+                <p class="show-num">12</p>
+                <p class="show-num">3</p>
+                <p class="show-num">6</p>
+                <p class="show-num">9</p>
+              </div>
+              <div class="clockhand"></div>
+              <div class="hour"></div>
+              <div class="min"></div>
+              <div class="sec"></div>
+              
+            </section>
+          </div>
+        
+        </div>
+        <div class="datalist">
+          <div class="local-data">
+            <div id="clock-display"></div>
+          </div>
+      
+          <div class="global-data">
+            <div class="datetime-display">
+              <div class="time-box" id="time-box">--:--:--</div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="option">
+          <button id="restart-btn" class="btn">Restart</button>
+          <div class="date-box" id="date-box">Date : --/--/----</div>
+        </div>
+      </div>
+          
+      <script src="script.js"></script>
+</body>
+</html>
